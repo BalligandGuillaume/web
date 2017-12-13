@@ -1,4 +1,5 @@
 
+
 header
 {
 	height:15%;
@@ -22,7 +23,7 @@ footer
 
 footer+img
 {
-  dispaly: inline-block;
+  display: inline-block;
   vertical-align: left;
   margin-bottom: 2%;
   margin-right: 5%; 
@@ -67,7 +68,12 @@ body
 	background-size: 100%;
 }
 
-#side-menu
+a:hover
+{
+	color: white;
+}
+
+#side-menu:target
 {
 	background-color: grey;
 	color: orange;
@@ -75,7 +81,20 @@ body
 	width: 10%;
 	height: 20%;
 	border-radius: 0.5em;
-	
+	font-size: 100%;
+}
+
+button
+{
+	position: absolute;
+	border-radius: 0.5em;
+	bottom: 63%;
+	color: black;
+}
+
+button:hover
+{
+	color: white;
 }
 
 #bienvenue
@@ -84,6 +103,10 @@ body
 	font-size: 150%;
 	color: orange;
 }
-	
 
+#side-menu
+{
+	font-size: 0%;
+}
+	
   
