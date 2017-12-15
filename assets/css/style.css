@@ -2,12 +2,18 @@ header
 {
 	height:12%;
 	background-color:whitesmoke;
-	opacity:0.8;
 	position:fixed;
 	left:0px;
 	top:0px;
 	width:100%;
-	z-index:1;*
+	z-index:1;
+}
+body {
+    background: #212a41 url("../img/noelv2.png") center top !important;
+    background-size: 50%;
+		margin-top:8%;
+		background-repeat:repeat;
+		background-size: 100%;
 }
 footer
 {
@@ -19,21 +25,36 @@ footer
   height: 5%;
   width: 100%;
 }
-
-footer+img
-{
-  display: inline-block;
-  vertical-align: left;
-  margin-bottom: 2%;
-  margin-right: 5%;
-}
 form
 {
 	position:absolute;
 	right:15%;
 	top:60%;
 }
-
+form:hover;
+{
+	cursor:pointer;
+}
+#ban_promo
+{
+	width:100%;
+	background-color:white;
+	border:5px solid blue;
+}
+#ban_promo p
+{
+	font-size: 3em;
+	color:grey;
+	text-align: center;
+}
+#ban_promo a
+{
+	text-decoration: none;
+}
+#search_button:hover
+{
+	cursor:pointer;
+}
 #search
 {
 	width:250px;
@@ -75,23 +96,23 @@ a:hover
 	justify-content:space-between;
 	flex-wrap:wrap;
 	align-items:baseline;
-	width:58%;
+	width:60%;
 	position: absolute;
 	right:16%;
 }
-.article
+article
 {
-	width:250px;
+	width:260px;
 	padding:10px;
 	text-align:center;
 	margin: 15px;
 	background-color: white;
 }
-.article:hover
+article:hover
 {
 	box-shadow:2px 2px grey;
 }
-.article input
+article input
 {
 	background-color:blue;
 	color:whitesmoke;
@@ -100,37 +121,13 @@ a:hover
 	font-size:1.4em;
 	border:none;
 }
-.article input:hover
+article input:hover
 {
     position: relative;
     box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
     padding: 10px;
 		cursor:pointer;
 }
-#side-menu:target
-{
-	background-color: grey;
-	color: orange;
-	padding: 0.5%;
-	width: 10%;
-	height: 20%;
-	border-radius: 0.5em;
-	font-size: 100%;
-}
-
-button
-{
-	position: absolute;
-	border-radius: 0.5em;
-	bottom: 63%;
-	color: black;
-}
-
-button:hover
-{
-	color: white;
-}
-
 #bienvenue
 {
 	text-align: center;
@@ -142,14 +139,6 @@ button:hover
 {
 	font-size: 0%;
 }
-body {
-    background: #212a41 url("../img/noelv2.png") center top !important;
-    background-size: 50%;
-		margin-top:20%;
-		background-repeat:repeat;
-		background-size: 100%;
-}
-
 /* ANIMATION */
 
 .snow-container {
@@ -162,7 +151,6 @@ body {
   top: 0;
   overflow: hidden;
   z-index: -1;
-  pointer-events: none;
 }
 .snow {
   display: block;
@@ -172,56 +160,35 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-  pointer-events: none;
-          transform: translate3d(0, -100%, 0);
-          animation: snow linear infinite;
+  transform: translate3d(0, -100%, 0);
+  animation: snow linear infinite;
 }
     .snow.foreground {
         background-image: url("../img/flaucon1.png");
-        -webkit-animation-duration: 50s;
         animation-duration: 50s;
     }
 .snow.foreground.layered {
-  -webkit-animation-delay: 30s;
           animation-delay: 30s;
 }
     .snow.middleground {
         background-image: url("../img/flaucon2.png");
-        -webkit-animation-duration: 40s;
         animation-duration: 40s;
     }
 .snow.middleground.layered {
-  -webkit-animation-delay: 10s;
           animation-delay: 10s;
 }
     .snow.background {
         background-image: url("../img/flaucon1.png");
-        -webkit-animation-duration: 30s;
         animation-duration: 30s;
     }
 .snow.background.layered {
-  -webkit-animation-delay: 15s;
           animation-delay: 15s;
 }
-
-@-webkit-keyframes snow {
-  0% {
-    -webkit-transform: translate3d(0, -100%, 0);
-            transform: translate3d(0, -100%, 0);
-  }
-  100% {
-    -webkit-transform: translate3d(0%, 100%, 0);
-            transform: translate3d(0%, 100%, 0);
-  }
-}
-
 @keyframes snow {
   0% {
-    -webkit-transform: translate3d(0, -100%, 0);
             transform: translate3d(0, -100%, 0);
   }
   100% {
-    -webkit-transform: translate3d(0%, 100%, 0);
             transform: translate3d(0%, 100%, 0);
   }
 }
