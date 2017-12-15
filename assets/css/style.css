@@ -1,14 +1,13 @@
-
-
 header
 {
 	height:12%;
 	background-color:whitesmoke;
+	opacity:0.8;
 	position:fixed;
 	left:0px;
 	top:0px;
 	width:100%;
-	z-index:1;
+	z-index:1;*
 }
 footer
 {
@@ -66,14 +65,6 @@ header p
 	left:5%
 }
 
-body
-{
-	margin-top:20%;
-	background-image: url("http://toddmerrillstudio.com/wp-content/uploads/2013/08/minimalistic_grey_background_by_efflamm-d5ckz7h.jpg");
-	background-repeat:repeat;
-	background-size: 100%;
-}
-
 a:hover
 {
 	color: white;
@@ -90,7 +81,6 @@ a:hover
 }
 .article
 {
-	border:2px solid;
 	width:250px;
 	padding:10px;
 	text-align:center;
@@ -99,7 +89,7 @@ a:hover
 }
 .article:hover
 {
-	box-shadow:2px 2px whitesmoke;
+	box-shadow:2px 2px grey;
 }
 .article input
 {
@@ -151,4 +141,87 @@ button:hover
 #side-menu
 {
 	font-size: 0%;
+}
+body {
+    background: #212a41 url("../img/noelv2.png") center top !important;
+    background-size: 50%;
+		margin-top:20%;
+		background-repeat:repeat;
+		background-size: 100%;
+}
+
+/* ANIMATION */
+
+.snow-container {
+
+  position: fixed;
+  height: 100vh;
+  margin-left: -15%;
+  width: 200%;
+  max-width: 200%;
+  top: 0;
+  overflow: hidden;
+  z-index: -1;
+  pointer-events: none;
+}
+.snow {
+  display: block;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+          transform: translate3d(0, -100%, 0);
+          animation: snow linear infinite;
+}
+    .snow.foreground {
+        background-image: url("../img/flaucon1.png");
+        -webkit-animation-duration: 50s;
+        animation-duration: 50s;
+    }
+.snow.foreground.layered {
+  -webkit-animation-delay: 30s;
+          animation-delay: 30s;
+}
+    .snow.middleground {
+        background-image: url("../img/flaucon2.png");
+        -webkit-animation-duration: 40s;
+        animation-duration: 40s;
+    }
+.snow.middleground.layered {
+  -webkit-animation-delay: 10s;
+          animation-delay: 10s;
+}
+    .snow.background {
+        background-image: url("../img/flaucon1.png");
+        -webkit-animation-duration: 30s;
+        animation-duration: 30s;
+    }
+.snow.background.layered {
+  -webkit-animation-delay: 15s;
+          animation-delay: 15s;
+}
+
+@-webkit-keyframes snow {
+  0% {
+    -webkit-transform: translate3d(0, -100%, 0);
+            transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0%, 100%, 0);
+            transform: translate3d(0%, 100%, 0);
+  }
+}
+
+@keyframes snow {
+  0% {
+    -webkit-transform: translate3d(0, -100%, 0);
+            transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0%, 100%, 0);
+            transform: translate3d(0%, 100%, 0);
+  }
 }
