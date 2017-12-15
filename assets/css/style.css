@@ -8,7 +8,33 @@ header
 	width:100%;
 	z-index:1;
 }
-body {
+
+#promos
+{
+	background-image: url("http://depannage-informatique-domicile-nice-cagnes-antibes.afeinfo.fr/img/fond%20ecran%20noel/cadre-2.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	padding: 1.5%;
+	border: solid;
+	border-radius: 5%;
+	border-color: #00235b;
+	margin-left: 20%;
+	margin-bottom: 10%;
+	width: 60%;
+	height: 40%;
+}
+
+#promos img
+{
+	border: solid;
+	border-radius: 5%;
+	background-color: white
+	
+}
+
+
+body 
+{
     background: #212a41 url("../img/noelv2.png") center top !important;
     background-size: 50%;
 		margin-top:8%;
