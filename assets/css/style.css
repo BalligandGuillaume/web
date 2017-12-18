@@ -8,6 +8,25 @@ header
 	width:100%;
 	z-index:1;
 }
+#menu
+{
+	display:block;
+	width:65px;
+	height:65px;
+	overflow:hidden;
+}
+#menu:hover
+{
+	transition:0.5;
+	width:15%;
+	height:300px;
+	background-color: whitesmoke;
+}
+#menu button
+{
+	border:none;
+	background-color: whitesmoke;
+}
 body {
     background: #212a41 url("../img/noelv2.png") center top !important;
     background-size: 50%;
@@ -31,7 +50,7 @@ form
 	right:15%;
 	top:60%;
 }
-form:hover;
+form:hover , a:hover
 {
 	cursor:pointer;
 }
@@ -135,10 +154,6 @@ article input:hover
 	color: orange;
 }
 
-#side-menu
-{
-	font-size: 0%;
-}
 /* ANIMATION */
 
 .snow-container {
@@ -155,7 +170,7 @@ article input:hover
 .snow {
   display: block;
   position: absolute;
-  z-index: 2;
+  z-index: -1;
   top: 0;
   right: 0;
   bottom: 0;
@@ -164,21 +179,21 @@ article input:hover
   animation: snow linear infinite;
 }
     .snow.foreground {
-        background-image: url("../img/flaucon1.png");
+        background-image: url("../img/flaucon3.png");
         animation-duration: 50s;
     }
 .snow.foreground.layered {
           animation-delay: 30s;
 }
     .snow.middleground {
-        background-image: url("../img/flaucon2.png");
+        background-image: url("../img/flaucon3.png");
         animation-duration: 40s;
     }
 .snow.middleground.layered {
           animation-delay: 10s;
 }
     .snow.background {
-        background-image: url("../img/flaucon1.png");
+        background-image: url("../img/flaucon3.png");
         animation-duration: 30s;
     }
 .snow.background.layered {
@@ -186,9 +201,9 @@ article input:hover
 }
 @keyframes snow {
   0% {
-            transform: translate3d(0, -100%, 0);
+            transform: translate3d(0, 100%, 0);
   }
   100% {
-            transform: translate3d(0%, 100%, 0);
+            transform: translate3d(0%, -100%, 0);
   }
 }
