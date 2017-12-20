@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <title>Dron'ad air</title>
+    <meta charset="UTF-8">
+	  <meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+		<link href="https://use.fontawesome.com/releases/v5.0.0/css/all.css" rel="stylesheet">
+	</head>
+<body>
+  <section id="maintenance">
+  <p>Désolé, cette section est en maintenance pour une durée indéterminée...</p>
+  <p>Revenez plus tard.</p>
+  </section>
+</body>
+</html>
