@@ -249,6 +249,22 @@ article input:hover
 	border-color: #4060b2;
 }
 
+#maintenance
+{
+	color: #4060b2;
+	font-size: 200%;
+	text-align: center;
+	margin-top: 5%;
+}
+
+#maintenance img
+{
+	background-color: whitesmoke;
+	border: solid;
+	border-radius: 100%;
+}
+
+
 /* ANIMATION */
 
 .snow-container {
