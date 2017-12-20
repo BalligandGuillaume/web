@@ -18,7 +18,7 @@ header
 #menu:hover
 {
 	transition:0.5;
-	width:15%;
+	width:20%;
 	height:300px;
 	background-color: whitesmoke;
 }
@@ -27,11 +27,40 @@ header
 	border:none;
 	background-color: whitesmoke;
 }
-
+#menu li
+{
+	font-size:1.5em;
+	list-style: none;
+	color: grey;
+	margin-top:10px;
+	margin-left: 10px;
+	padding-left: 0px;
+	text-align:center;
+	padding:10px;
+	border-left: 4px blue solid;
+	font-weight: bold;
+}
+#menu ul
+{
+	width:95%;
+	margin-top:10px;
+	margin-left: 0px;
+	padding-left: 0px;
+}
+#menu li:hover
+{
+	transition:0.5s ease;
+	background-color:grey;
+	color:white;
+	transform: skewX(4deg);}
 #promos
 {
-	background-image: url("http://depannage-informatique-domicile-nice-cagnes-antibes.afeinfo.fr/img/fond%20ecran%20noel/cadre-2.png");
+	display:flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	background-image:url("../img/cadre.png");
 	background-repeat: no-repeat;
+	background-color:#f44242;
 	background-size: 100%;
 	padding: 1.5%;
 	border: solid;
@@ -45,6 +74,7 @@ header
 
 #promos img
 {
+	margin:10px;
 	border: solid;
 	border-radius: 5%;
 	background-color: white
@@ -58,6 +88,8 @@ body
 		margin-top:8%;
 		background-repeat:repeat;
 		background-size: 100%;
+		-ms-user-select:none;
+		cursor:default;
 }
 footer
 {
@@ -99,17 +131,17 @@ form:hover , a:hover
 {
 	cursor:pointer;
 }
-#search
+#search input
+{
+	height:150%;
+}
+#search_text
 {
 	width:250px;
 }
 #search_button
 {
-	border-radius:50%;
-	border:none;
-	width:30px;
-	height:30px;
-	background-color:blue;
+	float:right;
 }
 #logo
 {
