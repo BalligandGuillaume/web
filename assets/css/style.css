@@ -18,16 +18,36 @@ body
 		-ms-user-select:none;
 		cursor:default;
 }
+
 footer
 {
   position: relative;
   background-color: whitesmoke;
   text-align: center;
-  bottom: 0px;
-  left: 0px;
+  bottom: 0%;
   height: 5%;
   width: 100%;
+  color: #4060b2;
+  text-decoration: none;
 }
+
+footer p:visited
+{
+	text-decoration: none;
+	color:#4060b2;
+}
+
+footer p:link
+{
+	text-decoration: none;
+	color:#4060b2;
+}
+
+footer p:hover
+{
+	color: #4060b2;
+}
+
 #panier
 {
 	position:absolute;
@@ -85,6 +105,7 @@ footer
 	background-color:grey;
 	color:white;
 	transform: skewX(4deg);}
+	
 #promos
 {
 	display:flex;
@@ -92,22 +113,25 @@ footer
 	flex-wrap: wrap;
 	background-image:url("../img/cadre.png");
 	background-repeat: no-repeat;
-	background-color:#f44242;
+	background-color:#4060b2;
 	background-size: 100%;
 	padding: 1.5%;
 	border: solid;
 	border-radius: 5%;
-	border-color: #00235b;
+	border-color: #4060b2;
 	margin-left: 20%;
-	margin-bottom: 10%;
+	margin-bottom: 5%;
 	width: 60%;
 	height: 40%;
 }
 
-#promos img
+#promos img 
 {
 	margin:10px;
+	width: 300px;
+	height: 250px;
 	border: solid;
+	border-color: #4060b2;
 	border-radius: 5%;
 	background-color: white
 }
@@ -206,6 +230,7 @@ a:hover
 {
 	color: white;
 }
+
 #page_article
 {
 	display:flex;
@@ -216,6 +241,7 @@ a:hover
 	position: absolute;
 	right:16%;
 }
+
 article
 {
 	width:260px;
@@ -276,7 +302,7 @@ article input:hover
 {
 	text-align: center;
 	font-size: 150%;
-	color: orange;
+	color: #4060b2;
 }
 
 #aboutus
@@ -314,6 +340,7 @@ article input:hover
 
 #contactus button
 {
+	cursor: pointer;
 	border-color: #4060b2;
 }
 
@@ -332,6 +359,13 @@ article input:hover
 	border-radius: 100%;
 }
 
+#commande form
+{
+	position: absolute;
+	left: 43%;
+	top: 10%;
+	
+}
 
 /* ANIMATION */
 
