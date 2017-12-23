@@ -18,17 +18,36 @@ body
 		-ms-user-select:none;
 		cursor:default;
 }
-footer/*modif*/
+
+footer
 {
   position: relative;
   background-color: whitesmoke;
   text-align: center;
-  bottom: 0px;
-  left: 0px;
+  bottom: 0%;
   height: 5%;
   width: 100%;
   color: #4060b2;
+  text-decoration: none;
 }
+
+footer p:visited
+{
+	text-decoration: none;
+	color:#4060b2;
+}
+
+footer p:link
+{
+	text-decoration: none;
+	color:#4060b2;
+}
+
+footer p:hover
+{
+	color: #4060b2;
+}
+
 #panier
 {
 	position:absolute;
@@ -87,7 +106,7 @@ footer/*modif*/
 	color:white;
 	transform: skewX(4deg);}
 	
-#promos/*modif*/
+#promos
 {
 	display:flex;
 	justify-content: space-around;
@@ -106,7 +125,7 @@ footer/*modif*/
 	height: 40%;
 }
 
-#promos img /*modif*/
+#promos img 
 {
 	margin:10px;
 	width: 300px;
@@ -316,11 +335,11 @@ article input:hover
 	position: relative;
 	text-align: center;
 	margin-top: 7%;
-	background-image: assets/img/envelope-23692_640.png;
 }
 
 #contactus button
 {
+	cursor: pointer;
 	border-color: #4060b2;
 }
 
@@ -339,6 +358,13 @@ article input:hover
 	border-radius: 100%;
 }
 
+#commande form
+{
+	position: absolute;
+	left: 43%;
+	top: 10%;
+	
+}
 
 /* ANIMATION */
 
