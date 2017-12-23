@@ -8,26 +8,58 @@ header
 	width:100%;
 	z-index:1;
 }
-#menu
+body
+{
+    background: #212a41 url("../img/noelv2.png") center top !important;
+    background-size: 50%;
+		margin-top:8%;
+		background-repeat:repeat;
+		background-size: 100%;
+		-ms-user-select:none;
+		cursor:default;
+}
+footer
+{
+  position: relative;
+  background-color: whitesmoke;
+  text-align: center;
+  bottom: 0px;
+  left: 0px;
+  height: 5%;
+  width: 100%;
+}
+#panier
+{
+	position:absolute;
+	top:45%;
+	right:10%;
+}
+nav
 {
 	display:block;
-	width:65px;
-	height:65px;
+	position:absolute;
+	left:0px;
+	top:50%;
+	width:10%;
+	height:50%;
 	overflow:hidden;
+	color:rgb(77,79,166);
 }
-#menu:hover
+nav:hover
 {
-	transition:0.5;
+	transition:0.5s;
 	width:20%;
 	height:300px;
+	border-bottom-right-radius: 0.5em;
 	background-color: whitesmoke;
+	color: rgb(64, 96, 178);
 }
-#menu button
+nav button
 {
 	border:none;
 	background-color: whitesmoke;
 }
-#menu li
+nav li
 {
 	font-size:1.5em;
 	list-style: none;
@@ -37,17 +69,17 @@ header
 	padding-left: 0px;
 	text-align:center;
 	padding:10px;
-	border-left: 4px blue solid;
+	border-left: 4px rgb(64, 96, 178) solid;
 	font-weight: bold;
 }
-#menu ul
+nav ul
 {
 	width:95%;
 	margin-top:10px;
 	margin-left: 0px;
 	padding-left: 0px;
 }
-#menu li:hover
+nav li:hover
 {
 	transition:0.5s ease;
 	background-color:grey;
@@ -79,28 +111,6 @@ header
 	border-radius: 5%;
 	background-color: white
 }
-
-
-body
-{
-    background: #212a41 url("../img/noelv2.png") center top !important;
-    background-size: 50%;
-		margin-top:8%;
-		background-repeat:repeat;
-		background-size: 100%;
-		-ms-user-select:none;
-		cursor:default;
-}
-footer
-{
-  position: relative;
-  background-color: whitesmoke;
-  text-align: center;
-  bottom: 0px;
-  left: 0px;
-  height: 5%;
-  width: 100%;
-}
 form
 {
 	position:absolute;
@@ -115,7 +125,7 @@ form:hover , a:hover
 {
 	width:100%;
 	background-color:white;
-	border:5px solid blue;
+	border:5px solid rgb(64, 96, 178);
 }
 #ban_promo p
 {
@@ -127,22 +137,52 @@ form:hover , a:hover
 {
 	text-decoration: none;
 }
-#search_button:hover
+.header-search
 {
+	height:32px;
+	width:285px;
+	margin: 28px 10px 0;
+}
+.fond-search
+{
+	width:288px;
+	height:32px;
+	background-color:#FFFFFF;
+	border: solid 1px #CCC;
+}
+.fond-centre input[name="keywords"]
+{
+	border-width:1px !important;
+	height:20px;
+	line-height:20px;
+}
+.header-search .input-text-search
+{
+	width:235px;
+	height:22px;
+	line-height:22px;
+	padding:5px;
+	border:0;
+	background-color:transparent;
+	color:#000;
+	font-size:13px;
+	float:left;
+	margin:0;
+}
+.boutonOK
+{
+	width:38px;
+	height:32px;
+	border:none ;
 	cursor:pointer;
-}
-#search input
-{
-	height:150%;
-}
-#search_text
-{
-	width:250px;
-}
-#search_button
-{
+	border-radius:0;
+	text-indent:-100px;
+	background:rgb(64,96,178) url("../img/loupe.png");
+	background-position: center center;
+	background-repeat: no-repeat;
 	float:right;
-}
+ }
+
 #logo
 {
 	text-align:center;
@@ -186,11 +226,11 @@ article
 }
 article:hover
 {
-	box-shadow:2px 2px grey;
+	box-shadow:3px 3px grey;
 }
 article input
 {
-	background-color:blue;
+	background-color:rgb(64, 96, 178);
 	color:whitesmoke;
 	width:100%;
 	height:50px;
@@ -199,7 +239,7 @@ article input
 }
 article input:hover
 {
-    position: relative;
+		background-color:rgb(50, 10, 180) ;
     box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
     padding: 10px;
 		cursor:pointer;
