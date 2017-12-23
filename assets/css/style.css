@@ -18,7 +18,7 @@ body
 		-ms-user-select:none;
 		cursor:default;
 }
-footer
+footer/*modif*/
 {
   position: relative;
   background-color: whitesmoke;
@@ -27,6 +27,7 @@ footer
   left: 0px;
   height: 5%;
   width: 100%;
+  color: #4060b2;
 }
 #panier
 {
@@ -85,29 +86,33 @@ footer
 	background-color:grey;
 	color:white;
 	transform: skewX(4deg);}
-#promos
+	
+#promos/*modif*/
 {
 	display:flex;
 	justify-content: space-around;
 	flex-wrap: wrap;
 	background-image:url("../img/cadre.png");
 	background-repeat: no-repeat;
-	background-color:#f44242;
+	background-color:#4060b2;
 	background-size: 100%;
 	padding: 1.5%;
 	border: solid;
 	border-radius: 5%;
-	border-color: #00235b;
+	border-color: #4060b2;
 	margin-left: 20%;
-	margin-bottom: 10%;
+	margin-bottom: 5%;
 	width: 60%;
 	height: 40%;
 }
 
-#promos img
+#promos img /*modif*/
 {
 	margin:10px;
+	width: 300px;
+	height: 250px;
 	border: solid;
+	border-color: #4060b2;
 	border-radius: 5%;
 	background-color: white
 }
@@ -206,6 +211,7 @@ a:hover
 {
 	color: white;
 }
+
 #page_article
 {
 	display:flex;
@@ -216,6 +222,7 @@ a:hover
 	position: absolute;
 	right:16%;
 }
+
 article
 {
 	width:260px;
@@ -275,7 +282,7 @@ article input:hover
 {
 	text-align: center;
 	font-size: 150%;
-	color: orange;
+	color: #4060b2;
 }
 
 #aboutus
@@ -309,6 +316,7 @@ article input:hover
 	position: relative;
 	text-align: center;
 	margin-top: 7%;
+	background-image: assets/img/envelope-23692_640.png;
 }
 
 #contactus button
