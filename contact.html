@@ -13,11 +13,17 @@
 				<img src="assets/img/logo.png" alt="logo" width="120" height="50">
 				<h1>Dron'Ad Air</h1>
 			</div>
-			<form action="index.html">
-               <input type="text" placeholder="Rechercher..."/>
-                    <input type="button" value=" " />
-
-            </form>
+      <section>
+        <div class="header-search Head_recherche">
+              <form name="form_recherche" action="results.html" method="get">
+                  <div class="fond-search fleft">
+                      <input name="keywords" class="input-text-search" type="text" maxlength="255" placeholder="Recherche...">
+                      <input name="" class="boutonOK fleft" type="submit" value="">
+                  </div>
+              </form>
+        </div>
+            <a><img id="panier" src="assets/img/panier.png" alt="panier" width="50"></a>
+		</section>
 		</header>
 		<p id="aboutus">Qui sommes nous ?</p>
 
@@ -30,7 +36,7 @@
 		</section>
 
 		<section id="contactus">
-		<p>Nous contacter:</p>
+		<p>Nous contacter</p>
 		<p><input name="Nom" placeholder="Nom"></p>
 		<p><input name="Prénom" placeholder="Prénom"></p>
 		<p><textarea rows="5" cols="40" placeholder="Questions/Commentaires"></textarea></p>
