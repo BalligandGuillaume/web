@@ -8,6 +8,26 @@ header
 	width:100%;
 	z-index:1;
 }
+header nav
+{
+	margin:auto;
+	position:absolute;
+	bottom:0px;
+	left:20%;
+}
+header nav ul
+{
+	display:flex;
+	flex-direction:row;
+	flex-wrap: wrap;
+}
+header nav li
+{
+	list-style: none;
+	font-size:2em;
+	margin-left:30px;
+	font-style:italic;
+}
 body
 {
     background: #212a41 url("../img/noelv2.png") center top !important;
@@ -105,7 +125,7 @@ footer p:hover
 	background-color:grey;
 	color:white;
 	transform: skewX(4deg);}
-	
+
 #promos
 {
 	display:flex;
@@ -125,7 +145,7 @@ footer p:hover
 	height: 40%;
 }
 
-#promos img 
+#promos img
 {
 	margin:10px;
 	width: 300px;
@@ -275,14 +295,49 @@ article input:hover
 	width:60%;
 	margin:auto;
 	background-color: white;
+	text-align:center;
+	height:150%;
+	display:flex;
+	flex-direction:column;
+	padding:10px;
 }
-#detail img
+#detail h3
+{
+	font-size:2em;
+	font-weight:bold;
+}
+#detail h4
+{
+	font-size:1.5em;
+	font-weight:bold;
+}
+#detail p
+{
+	font-size:1.2em;
+}
+#detail strong
+{
+	display:block;
+	font-size:2.5em;
+	font-weight:bold;
+	margin-top:10px;
+}
+#detail #image_article
 {
 	width:30%;
-	float:left;
+	margin:auto;
 }
-#detail div 
-#detail input
+#detail #frskylogo
+{
+	width:15%;
+	float:left;
+	display:inline;
+}
+#detail li
+{
+	text-align: left;
+}
+#detail button
 {
 	background-color:rgb(64, 96, 178);
 	color:whitesmoke;
@@ -291,12 +346,16 @@ article input:hover
 	font-size:1.4em;
 	border:none;
 }
-#detail input:hover
+#detail button:hover
 {
 		background-color:rgb(50, 10, 180) ;
     box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
     padding: 10px;
 		cursor:pointer;
+}
+#detail input
+{
+	height:30px;
 }
 #bienvenue
 {
@@ -311,7 +370,6 @@ article input:hover
 	color: #4060b2;
 	font-size: 200%;
 }
-
 #description
 {
 	background-color: whitesmoke;
@@ -364,7 +422,7 @@ article input:hover
 	position: absolute;
 	left: 43%;
 	top: 10%;
-	
+
 }
 
 /* ANIMATION */
