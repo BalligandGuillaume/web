@@ -1,0 +1,16 @@
+<!Doctype html>
+
+<html>
+  <head>
+  <title>Dron'ad air</title>
+    <meta charset="UTF-8">
+	  <meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+		<link href="https://use.fontawesome.com/releases/v5.0.0/css/all.css" rel="stylesheet">
+	</head>
+  <body>
+    <p>Votre commande a bien été prise en compte, merci de votre confiance. Pour retourner sur le site, cliquer sur le logo Dron'Ad Air.</p>
+    <a href="index.html><img src="assets/img/logo.png" width="400" height="200"></a>
+  </body>
+</html>
+    
