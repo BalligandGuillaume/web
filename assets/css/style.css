@@ -455,6 +455,40 @@ article input:hover
 	border-color: #4060b2;
 }
 
+#validcomm
+{
+	color: #4060b2;
+	font-size: 200%;
+	text-align: center;
+	margin-top: 5%;
+}
+
+#validcomm img
+{
+	background-color: whitesmoke;
+	border: solid;
+	border-radius: 100%;
+}
+
+#validcomm a:visited
+{
+	text-decoration: none;
+	color:#4060b2;
+}
+
+#validcomm a:link
+{
+	text-decoration: none;
+	color:#4060b2;
+}
+
+#validcomm a:hover
+{
+	color: #5b89ff;
+}
+
+	
+
 /* ANIMATION */
 
 .snow-container {
