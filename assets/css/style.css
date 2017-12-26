@@ -51,21 +51,21 @@ footer
   text-decoration: none;
 }
 
-footer p:visited
+footer a:visited
 {
 	text-decoration: none;
 	color:#4060b2;
 }
 
-footer p:link
+footer a:link
 {
 	text-decoration: none;
 	color:#4060b2;
 }
 
-footer p:hover
+footer a:hover
 {
-	color: #4060b2;
+	color: #5b89ff;
 }
 
 #panier
@@ -147,7 +147,7 @@ footer p:hover
 
 #promos img
 {
-	margin:10px;
+	margin-top:20px;
 	width: 300px;
 	height: 250px;
 	border: solid;
@@ -155,6 +155,16 @@ footer p:hover
 	border-radius: 5%;
 	background-color: white
 }
+#ban-index
+{
+	width:100%;
+	color: grey;
+	background-color:white;
+	border:5px solid rgb(64, 96, 178);
+	text-align: center;
+	font-size: 3em;
+}
+
 form
 {
 	position:absolute;
@@ -384,6 +394,7 @@ article input:hover
 
 #contactus
 {
+	background-color: whitesmoke;
 	border: solid;
 	border-radius: 5%;
 	border-color: #4060b2;
@@ -417,12 +428,31 @@ article input:hover
 	border-radius: 100%;
 }
 
+#commande p
+{
+	color: #4060b2;
+	text-align: center;
+	font-size: 150%;
+}
+
 #commande form
 {
 	position: absolute;
-	left: 43%;
-	top: 10%;
+	background-color: whitesmoke;
+	border: solid;
+	border-color: #4060b2;
+	border-radius: 5%;
+	cursor: default;
+	left: 35%;
+	right: 35%;
+	top: 23%;
 
+}
+
+#commande button
+{
+	cursor: pointer;
+	border-color: #4060b2;
 }
 
 /* ANIMATION */
