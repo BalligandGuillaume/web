@@ -1,14 +1,47 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Dron'ad air</title>
-        <meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width">
+  <head>
+    <title>Dron'ad air</title>
+    <link rel="icon" type="image/png" href="assets/img/logo.png" />
+    <meta charset="UTF-8">
+	  <meta name="viewport" content="width=device-width">
 		<link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
 		<link href="https://use.fontawesome.com/releases/v5.0.0/css/all.css" rel="stylesheet">
-	    	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+	  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 	</head>
     <body>
+      <header>
+        <div id="logo">
+          <img src="assets/img/logo.png" alt="logo" width="120" height="50">
+          <h1>Dron'Ad Air</h1>
+        <nav id="liens">
+          <ul>
+            <li><a href="index.html">Acceuil</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        </div>
+        <section>
+          <div class="header-search Head_recherche">
+                <form name="form_recherche" action="results.html" method="get">
+                    <div class="fond-search fleft">
+                        <input name="keywords" class="input-text-search" type="text" maxlength="255" placeholder="Recherche...">
+                        <input name="" class="boutonOK fleft" type="submit" value="">
+                    </div>
+                </form>
+          </div>
+              <a href="commande.html"><img id="panier" src="assets/img/panier.png" alt="panier" width="50"></a>
+      </section>
+        <nav id="menu">
+            <button type="button" value=""><img src="assets/img/menu.png" alt="logo" width="50" height="50"></button>
+            <ul id="side-menu">
+              <li><a href="article.html">L'article de la semaine</a></li>
+              <li><a href="results.html">Nouveautés</a></li>
+              <li><a href="results.html">Multirotors</a></li>
+              <li><a href="results.html">Drones de courses</a></li>
+            </ul>
+        </nav>
+      </header>
 		<section id="commande">
 			<p>Veuillez remplir les informations suivantes afin de valider votre commande.</p>
 			<form action="ValidCommande.html">

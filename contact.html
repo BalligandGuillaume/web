@@ -7,12 +7,18 @@
 		<link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
 		<link href="https://use.fontawesome.com/releases/v5.0.0/css/all.css" rel="stylesheet">
 	</head>
-    <body>
-		<header>
-			<div id="logo">
-				<img src="assets/img/logo.png" alt="logo" width="120" height="50">
-				<h1>Dron'Ad Air</h1>
-			</div>
+  <body>
+    <header>
+      <div id="logo">
+        <img src="assets/img/logo.png" alt="logo" width="120" height="50">
+        <h1>Dron'Ad Air</h1>
+      <nav id="liens">
+        <ul>
+          <li><a href="index.html">Acceuil</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      </div>
       <section>
         <div class="header-search Head_recherche">
               <form name="form_recherche" action="results.html" method="get">
@@ -22,10 +28,18 @@
                   </div>
               </form>
         </div>
-            <a><img id="panier" src="assets/img/panier.png" alt="panier" width="50"></a>
-		</section>
-		
-		</header>
+            <a href="commande.html"><img id="panier" src="assets/img/panier.png" alt="panier" width="50"></a>
+    </section>
+      <nav id="menu">
+          <button type="button" value=""><img src="assets/img/menu.png" alt="logo" width="50" height="50"></button>
+          <ul id="side-menu">
+            <li><a href="article.html">L'article de la semaine</a></li>
+            <li><a href="results.html">Nouveautés</a></li>
+            <li><a href="results.html">Multirotors</a></li>
+            <li><a href="results.html">Drones de courses</a></li>
+          </ul>
+      </nav>
+    </header>
 		<p id="aboutus">Qui sommes nous ?</p>
 
 		<section id="description">
@@ -43,6 +57,5 @@
 		<p><textarea rows="5" cols="40" placeholder="Questions/Commentaires"></textarea></p>
 		<a href="PageMaintenance.html"><p><button>Envoyer</button></p></a>
 		</section>
-    </body>
-
+  </body>
 </html>
