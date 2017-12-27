@@ -73,7 +73,7 @@ a
 }
 a:hover
 {
-	color: white;
+	color:rgb(64,96,178);
 }
 #panier
 {
@@ -384,10 +384,11 @@ h6
 	text-align: center;
 	border: solid;
 	border-color: #4060b2;
-	border-radius: 5%;
-	width: 50%;
-	padding: 0.2%;
-	margin-left: 25%;
+	border-radius:2em;
+	width: 60%;
+	padding: 0.5%;
+	margin:auto;
+	font-size:1.4em;
 }
 #contactus
 {
@@ -478,6 +479,7 @@ border:none;
 	width:70%;
 	margin:auto;
 }
+
 /* ANIMATION (source: animation de neige de billetreduc.com)*/
 .drone-container {
 
