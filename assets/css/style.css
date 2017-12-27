@@ -46,13 +46,13 @@ body
 		cursor:default;
 		font-family:sans-Serif;
 }
-form
+header form
 {
 	position:absolute;
 	right:15%;
 	top:60%;
 }
-form:hover , a:hover
+form:hover , a:hover, button:hover
 {
 	cursor:pointer;
 }
@@ -178,34 +178,11 @@ a:hover
 	background-repeat: no-repeat;
 	float:right;
  }
- article
- {
- 	width:260px;
- 	padding:10px;
- 	text-align:center;
- 	margin: 15px;
- 	background-color: white;
- }
- article:hover
- {
- 	box-shadow:3px 3px grey;
- }
- article input
- {
- 	background-color:rgb(64, 96, 178);
- 	color:whitesmoke;
- 	width:100%;
- 	height:50px;
- 	font-size:1.4em;
- 	border:none;
- }
- article input:hover
- {
- 		background-color:rgb(50, 10, 180) ;
-     box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
-     padding: 10px;
- 		cursor:pointer;
- }
+h6
+{
+	font-size:1.2em;
+	margin:6px;
+}
 /*page d'acceuil*/
 #promos
 {
@@ -276,7 +253,6 @@ a:hover
 	color:grey;
 	text-align: center;
 }
-
 /*page de résultats*/
 #page_article
 {
@@ -287,6 +263,38 @@ a:hover
 	width:60%;
 	position: absolute;
 	right:16%;
+}
+#page_article article
+{
+ width:260px;
+ padding:10px;
+ text-align:center;
+ margin: 15px;
+ background-color: white;
+}
+ #page_article article:hover
+{
+ box-shadow:3px 3px grey;
+}
+ #page_article article input
+{
+ background-color:rgb(64, 96, 178);
+ color:whitesmoke;
+ width:100%;
+ height:50px;
+ font-size:1.4em;
+ border:none;
+}
+ #page_article article input:hover
+{
+	 background-color:rgb(50, 10, 180) ;
+		box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+		padding: 10px;
+	 cursor:pointer;
+}
+.prix
+{
+	font-weight: bold;
 }
 /*Page d'article détaillé*/
 #detail
@@ -400,74 +408,76 @@ a:hover
 	cursor: pointer;
 	border-color: #4060b2;
 }
-/*Page de maintenance*/
-#maintenance
+/*Page de validation*/
+#validation
 {
 	color: #4060b2;
 	font-size: 200%;
 	text-align: center;
 	margin-top: 5%;
-}
-#maintenance img
-{
+	padding:30px;
+	border-radius:0.5em;
+	width:70%;
+	margin:auto;
 	background-color: whitesmoke;
+	border: solid;
+	border-color: #4060b2;
+	border-radius: 5%;
+	width:70%;
+	margin:auto;
+}
+#validation img
+{
+	margin-top:20px;
 	border: solid;
 	border-radius: 100%;
 }
 /*Page de formulaire*/
 #commande p
 {
-	color: #4060b2;
-	text-align: center;
-	font-size: 150%;
+	text-align:center;
+	font-size:1.7em;
 }
 #commande form
 {
-	position: absolute;
+	display:flex;
+	flex-direction:column;
+	width:40%;
+	margin:auto;
+}
+#commande form input
+{
+	margin-bottom:10px;
+	height:20px;
+	border:1px solid rgb(64, 96, 178);
+}
+#commande button
+{
+background-color:rgb(64, 96, 178);
+color:whitesmoke;
+width:100%;
+height:50px;
+font-size:1.4em;
+border:none;
+}
+#commande button:hover
+{
+	background-color:rgb(50, 10, 180) ;
+	 box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+	 padding: 10px;
+	cursor:pointer;
+}
+#commande
+{
 	background-color: whitesmoke;
 	border: solid;
 	border-color: #4060b2;
 	border-radius: 5%;
 	cursor: default;
-	left: 35%;
-	right: 35%;
-	top: 23%;
+	height:450px;
+	width:70%;
+	margin:auto;
 }
-#commande button
-{
-	cursor: pointer;
-	border-color: #4060b2;
-}
-#validcomm
-{
-	color: #4060b2;
-	font-size: 200%;
-	text-align: center;
-	margin-top: 5%;
-}
-#validcomm img
-{
-	background-color: whitesmoke;
-	border: solid;
-	border-radius: 100%;
-}
-#validcomm a:visited
-{
-	text-decoration: none;
-	color:#4060b2;
-}
-#validcomm a:link
-{
-	text-decoration: none;
-	color:#4060b2;
-}
-
-#validcomm a:hover
-{
-	color: #5b89ff;
-}
-
-
 /* ANIMATION (source: animation de neige de billetreduc.com)*/
 .drone-container {
 
