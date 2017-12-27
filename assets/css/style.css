@@ -492,14 +492,14 @@ a:hover
   animation: drone linear infinite;
 }
     .drone.foreground {
-        background-image: url("../img/flaucon3.png");
+        background-image: url("../img/flaucon1.png");
         animation-duration: 50s;
     }
 .drone.foreground.layered {
           animation-delay: 30s;
 }
     .drone.middleground {
-        background-image: url("../img/flaucon3.png");
+        background-image: url("../img/flaucon2.png");
         animation-duration: 40s;
     }
 .drone.middleground.layered {
