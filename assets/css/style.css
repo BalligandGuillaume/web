@@ -66,14 +66,18 @@ form:hover , a:hover, button:hover
 	position:relative;
 	top:-20px;
 }
-a
+header a
 {
 	color:black;
-	text-decoration: none;
 }
-a:hover
+header a:hover
 {
 	color:rgb(64,96,178);
+}
+a
+{
+		text-decoration: none;
+		color:black;
 }
 #panier
 {
@@ -183,7 +187,32 @@ h6
 	font-size:1.2em;
 	margin:6px;
 }
+.prix
+{
+	font-weight: bold;
+	color:black;
+}
+.prix strong
+{
+	display:block;
+	font-size:2.5em;
+	font-weight:bold;
+	margin-top:10px;
+}
+.prix em
+{
+	color:red;
+	text-decoration: line-through;
+	font-size: 2em;
+}
 /*page d'acceuil*/
+#bienvenue
+{
+	text-align: center;
+	font-size:2.6em;
+	font-weight:bold;
+	color: #4060b2;
+}
 #promos
 {
 	display:flex;
@@ -191,67 +220,50 @@ h6
 	flex-wrap: wrap;
 	background-image:url("../img/cadre.png");
 	background-repeat: no-repeat;
-	background-color:#4060b2;
+	background-color:white ;
 	background-size: 100%;
-	padding: 1.5%;
 	border: solid;
 	border-radius: 5%;
 	border-color: #4060b2;
-	margin-left: 20%;
+	margin:auto;
 	margin-bottom: 5%;
 	width: 60%;
 	height: 40%;
 }
-
-#detail-index
+#detail_index
 {
-	font-size: 1em;
-	width:50%;
+	font-size: 1.2em;
+	width:100%;
 	margin:auto;
-	background-color: white;
 	text-align:center;
 	height:100%;
 	display:flex;
 	flex-direction:column;
-	padding: 10px;
-	font-family:sans-Serif;
 }
-
-#detail-index img
+#detail_index img
 {
-	border: solid;
-	border-color: #4060b2;
-	margin-left: 5%;
+	margin:auto;
 	width: 30%;
-	height: 50%;
 }
-
-#detail-index a:hover
+#detail_index h3
 {
-	cursor: pointer;
-	border-color: #5b89ff;
+	font-size: 2.5em;
+	color:rgb(196,0,0);
+	text-align: center;
+	margin-bottom:10px;
+	margin-top: 40px;
+	font-weight: bold;
+	text-transform: uppercase;
 }
-
 #ban-index
 {
-	width:100%;
-	color: grey;
-	background-color:white;
-	border:5px solid rgb(64, 96, 178);
+	width:50%;
+	color: red;
 	text-align: center;
-	font-size: 3em;
-}
-#ban_promo
-{
-	width:100%;
-	background-color:white;
-	border:5px solid rgb(64, 96, 178);
-}
-#ban_promo p
-{
-	font-size: 3em;
-	color:grey;
-	text-align: center;
+	font-size: 2.5em;
+	font-weight: bold;
+	background-color:rgba(255, 255, 255, 0.8);
+	border-radius:0.5em;
 }
 /*page de résultats*/
 #page_article
@@ -292,9 +304,17 @@ h6
 		padding: 10px;
 	 cursor:pointer;
 }
-.prix
+#ban_promo
 {
-	font-weight: bold;
+	width:100%;
+	background-color:white;
+	border:5px solid rgb(64,96,178);
+}
+#ban_promo p
+{
+	font-size: 3em;
+	color:grey;
+	text-align: center;
 }
 /*Page d'article détaillé*/
 #detail
@@ -322,13 +342,6 @@ h6
 #detail p
 {
 	font-size:1.2em;
-}
-#detail strong
-{
-	display:block;
-	font-size:2.5em;
-	font-weight:bold;
-	margin-top:10px;
 }
 #detail #image_article
 {
@@ -364,12 +377,6 @@ h6
 #detail input
 {
 	height:30px;
-}
-#bienvenue
-{
-	text-align: center;
-	font-size: 150%;
-	color: #4060b2;
 }
 /*Page qui sommes nous*/
 #aboutus
