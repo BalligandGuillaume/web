@@ -42,7 +42,6 @@ body
 		margin-top:8%;
 		background-repeat:repeat;
 		background-size: 100%;
-		-ms-user-select:none;
 		cursor:default;
 		font-family:sans-Serif;
 }
@@ -220,7 +219,7 @@ h6
 	flex-wrap: wrap;
 	background-image:url("../img/cadre.png");
 	background-repeat: no-repeat;
-	background-color:white ;
+	background-color:white 	;
 	background-size: 100%;
 	border: solid;
 	border-radius: 5%;
@@ -288,7 +287,7 @@ h6
 {
  box-shadow:3px 3px grey;
 }
- #page_article article input
+ #page_article article button
 {
  background-color:rgb(64, 96, 178);
  color:whitesmoke;
@@ -297,7 +296,7 @@ h6
  font-size:1.4em;
  border:none;
 }
- #page_article article input:hover
+ #page_article article button:hover
 {
 	 background-color:rgb(50, 10, 180) ;
 		box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);

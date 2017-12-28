@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
-    <title>Dron'ad air</title>
-    <meta charset="UTF-8">
-	  <meta name="viewport" content="width=device-width">
-		<link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
-		<link href="https://use.fontawesome.com/releases/v5.0.0/css/all.css" rel="stylesheet">
-	   <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-	</head>
+      <title>Dron'ad air</title>
+      <meta charset="UTF-8">
+      <link rel="icon" type="image/png" href="assets/img/logop.png"/>
+      <meta name="viewport" content="width=device-width">
+      <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+      <link href="https://use.fontawesome.com/releases/v5.0.0/css/all.css" rel="stylesheet">
+      <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    </head>
     <body>
 		<header>
 			<div id="logo">
@@ -20,17 +21,17 @@
         </ul>
       </nav>
 			</div>
-      <section>
+      <div>
         <div class="header-search Head_recherche">
               <form name="form_recherche" action="results.html" method="get">
                   <div class="fond-search fleft">
                       <input name="keywords" class="input-text-search" type="text" maxlength="255" placeholder="Recherche...">
-                      <input name="" class="boutonOK fleft" type="submit" value="">
+                      <input class="boutonOK fleft" type="submit" value="">
                   </div>
               </form>
         </div>
             <a href="commande.html"><img id="panier" src="assets/img/panier.png" alt="panier" width="50"></a>
-    </section>
+    </div>
       <nav id="menu">
           <button type="button" value=""><img src="assets/img/menu.png" alt="logo" width="50" height="50"></button>
           <ul id="side-menu">
@@ -47,14 +48,16 @@
         <div class="drone middleground"></div>
     </div>
     <section id="detail">
-        <img id="frskylogo" src="assets/img/frsky2.png" alt="logofrsky" width:"50">
+        <img id="frskylogo" src="assets/img/frsky2.png" alt="logofrsky" width="50">
         <img id="image_article" src="assets/img/article1.jpg" alt="radio taranis">
         <h3>radio taranis 2.4Ghz</h3>
         <p>La Taranis Q-X7S est la version boostée de la Taranis Q-X7. Elle fonctionne sur OpenTX et les fichiers peuvent être partagés avec la X9D Plus. Elle possède des Gimbal à effet Hall M7, un emplacement pour carte MicroSD, un port USB pour mise à jour et réglages, une navigation facilité par une molette de réglage, ....</p>
         <p class="prix"><em>199€</em><strong>149€</strong></p>
-        <button type="button" action="contact.html">Ajoutez au panier</button>
+        <form action="commande.html">
+          <button type="submit">Ajoutez au panier</button>
+        </form>
+        <h4>Fonctionnalités :</h4>
         <ul>
-            <h4>Fonctionnalités :</h4>
             <li>Gimbal M7 à effet hall</li>
             <li>Match du recepteur</li>
             <li>Sortie audio (valeurs, alarme, settiings, etc.)</li>
@@ -68,7 +71,7 @@
         </ul>
         <h4>Avis :</h4>
         <p>Aucun avis sur ce produit !</p>
-        <input name"Commentaire" placeholder="Soyez le premier à commenter cet article ...">
+        <input name="Commentaire" placeholder="Soyez le premier à commenter cet article ...">
     </section>
     </body>
 </html>
