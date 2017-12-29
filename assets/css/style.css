@@ -711,6 +711,115 @@ border:none;
 		display:none;
 	}
 }
+
+/*responsive petit-écran*/
+@media only screen and (max-width:1024px)
+{
+	header
+	{
+		position:absolute;
+		top:0;
+		left:0;
+		font-size: 0.8em;
+		height:30%;
+		display:flex;
+		flex-direction: column;
+	}
+	
+	header #logo
+	{
+		display:none;
+	}
+	.header-search
+	{
+		top:-10%;
+		width:90%;
+		left:50%;
+	}
+	#panier
+	{
+		position:absolute;
+		right:10px;
+		top:50%;
+	}
+	#menu
+	{
+		top:50%;
+		height:45px;
+		width:45px;
+	}
+	#menu:hover
+	{
+		width:50%;
+	}
+	#liens
+	{
+		position:absolute;
+		top:10px;
+		left:0px;
+		margin-left:-20px;
+	}
+	body
+	{
+		margin-top:30%;
+	}
+	#bienvenue p
+	{
+		font-size: 0.6em;
+	}
+	#promos
+	{
+		width:95%;
+		background-size: cover;
+		font-size: 0.5em;
+	}
+	#detail_index img
+	{
+		width: 50%;
+	}
+	
+	#ban_promo img
+	{
+		display:none;
+	}
+	#page_article
+	{
+		justify-content: center;
+		left: 20%;
+	}
+	#detail
+	{
+		width:95%;
+	}
+	#description
+	{
+		width:95%;
+		margin-bottom: 10px;
+	}
+	#contactus
+	{
+		margin:auto;
+		width:95%;
+	}
+	#commande
+	{
+		width:95%;
+		height:100%;
+	}
+	#validation img
+	{
+		width:60%;
+		height:20%;
+	}
+	#validation
+	{
+		width:80%;
+	}
+	.drone-container
+	{
+		display:none;
+	}
+}
 /* ANIMATION (source: animation de neige de billetreduc.com)*/
 	.drone-container{
 
