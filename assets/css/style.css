@@ -266,7 +266,7 @@ a
 	align-items:baseline;
 	width:60%;
 	position: absolute;
-	right:16%;
+	right:20%;
 }
 #page_article article
 {
@@ -311,7 +311,7 @@ a
 }
 #ban_promo
 {
-	margin:auto;
+	margin-left: -7%;
 }
 /*Page d'article détaillé*/
 #detail
@@ -609,6 +609,7 @@ border:none;
 	header
 	{
 		position:absolute;
+		width: 100%;
 		top:0;
 		left:0;
 		font-size: 0.8em;
@@ -652,7 +653,7 @@ border:none;
 	}
 	body
 	{
-		margin-top:40%;
+		margin-top:50%;
 	}
 	#bienvenue p
 	{
