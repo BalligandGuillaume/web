@@ -45,12 +45,6 @@ body
 		cursor:default;
 		font-family:sans-Serif;
 }
-header form
-{
-	position:absolute;
-	right:15%;
-	top:60%;
-}
 form:hover , a:hover, button:hover
 {
 	cursor:pointer;
@@ -136,11 +130,15 @@ a
 	color:white;
 	transform: skewX(4deg);
 }
+/*Barre de recherche: "studiosport.fr"*/
 .header-search
 {
 	height:32px;
 	width:285px;
 	margin: 28px 10px 0;
+	position:absolute;
+	right:20%;
+	top:35%;
 }
 .fond-search
 {
@@ -496,56 +494,158 @@ border:none;
 	width:70%;
 	margin:auto;
 }
-
+/*responsive mobile*/
+@media screen and (max-width:1024px)
+{
+	header
+	{
+		position:absolute;
+		top:0;
+		left:0;
+		height:30%;
+		display:flex;
+		flex-direction: column;
+	}
+	header #logo
+	{
+		display: none;
+	}
+	.header-search
+	{
+		top:30%;
+		width:90%;
+		left:5%;
+	}
+	#panier
+	{
+		position:absolute;
+		right:10px;
+		top:10px;
+	}
+	#menu
+	{
+		top:70%;
+		height:60px;
+		width:60px;
+	}
+	#menu:hover
+	{
+		width:100%;
+	}
+	#liens
+	{
+		position:absolute;
+		top:10px;
+		left:0px;
+		margin-left:-20px;
+	}
+	body
+	{
+		margin-top:60%;
+	}
+	#bienvenue p
+	{
+		font-size: 0.5em;
+	}
+	#promos
+	{
+		width:95%;
+		background-image:none;
+	}
+	#ban_promo img
+	{
+		display:none;
+	}
+	#page_article
+	{
+		width:100%;
+		justify-content: center;
+		left:0px;
+	}
+	#page_article article
+	{
+	}
+	#detail
+	{
+		width:95%;
+	}
+	#description
+	{
+		width:95%;
+		margin-bottom: 10px;
+	}
+	#contactus
+	{
+		margin:auto;
+		width:95%;
+	}
+	#commande
+	{
+		width:95%;
+		height:100%;
+	}
+	#validation img
+	{
+		width:60%;
+		height:20%;
+	}
+	#validation
+	{
+		width:80%;
+	}
+}
 /* ANIMATION (source: animation de neige de billetreduc.com)*/
-.drone-container {
+@media screen and (min-width:1024px)
+{
+	.drone-container{
 
-  position: fixed;
-  height: 100vh;
-  margin-left: -15%;
-  width: 200%;
-  max-width: 200%;
-  top: 0;
-  overflow: hidden;
-  z-index: -1;
-}
-.drone {
-  display: block;
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  transform: translate3d(0, -100%, 0);
-  animation: drone linear infinite;
-}
-    .drone.foreground {
-        background-image: url("../img/flaucon1.png");
-        animation-duration: 50s;
-    }
-.drone.foreground.layered {
-          animation-delay: 30s;
-}
-    .drone.middleground {
-        background-image: url("../img/flaucon2.png");
-        animation-duration: 40s;
-    }
-.drone.middleground.layered {
-          animation-delay: 10s;
-}
-    .drone.background {
-        background-image: url("../img/flaucon3.png");
-        animation-duration: 30s;
-    }
-.drone.background.layered {
-          animation-delay: 15s;
-}
-@keyframes drone {
-  0% {
-            transform: translate3d(0, 100%, 0);
-  }
-  100% {
-            transform: translate3d(0%, -100%, 0);
-  }
+	  position: fixed;
+	  height: 100vh;
+	  margin-left: -15%;
+	  width: 200%;
+	  max-width: 200%;
+	  top: 0;
+	  overflow: hidden;
+	  z-index: -1;
+	}
+	.drone {
+	  display: block;
+	  position: absolute;
+	  z-index: -1;
+	  top: 0;
+	  right: 0;
+	  bottom: 0;
+	  left: 0;
+	  transform: translate3d(0, -100%, 0);
+	  animation: drone linear infinite;
+	}
+	    .drone.foreground {
+	        background-image: url("../img/flaucon1.png");
+	        animation-duration: 50s;
+	    }
+	.drone.foreground.layered {
+	          animation-delay: 30s;
+	}
+	    .drone.middleground {
+	        background-image: url("../img/flaucon2.png");
+	        animation-duration: 40s;
+	    }
+	.drone.middleground.layered {
+	          animation-delay: 10s;
+	}
+	    .drone.background {
+	        background-image: url("../img/flaucon3.png");
+	        animation-duration: 30s;
+	    }
+	.drone.background.layered {
+	          animation-delay: 15s;
+	}
+	@keyframes drone {
+	  0% {
+	            transform: translate3d(0, 100%, 0);
+	  }
+	  100% {
+	            transform: translate3d(0%, -100%, 0);
+	  }
+	}
 }
