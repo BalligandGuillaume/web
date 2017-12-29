@@ -593,10 +593,12 @@ border:none;
 	{
 		width:80%;
 	}
+	.drone-container
+	{
+		display:none;
+	}
 }
 /* ANIMATION (source: animation de neige de billetreduc.com)*/
-@media screen and (min-width:1024px)
-{
 	.drone-container{
 
 	  position: fixed;
@@ -648,4 +650,3 @@ border:none;
 	            transform: translate3d(0%, -100%, 0);
 	  }
 	}
-}
