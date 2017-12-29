@@ -494,8 +494,8 @@ border:none;
 	width:70%;
 	margin:auto;
 }
-/*responsive mobile*/
-@media screen and (max-width:425px)
+/*responsive mobile-portrait*/
+@media only screen and (max-width:425px) and (orientation: portrait)
 {
 	header
 	{
@@ -603,28 +603,27 @@ border:none;
 	}
 }
 
-/*responsive tablette*/
-@media screen and (min-width:768px) and (max-width:1024px)
+/*responsive mobile-landscape*/
+@media only screen and (min-width:640px) and (orientation: landscape)
 {
 	header
 	{
 		position:absolute;
-		width: 100%;
 		top:0;
 		left:0;
 		font-size: 0.8em;
-		height:25%;
+		height:30%;
 		display:flex;
 		flex-direction: column;
 	}
-	header #liens
+	
+	header #logo
 	{
-		position: absolute;
-		top: 25%;
+		display:none;
 	}
 	.header-search
 	{
-		top:20%;
+		top:-10%;
 		width:90%;
 		left:50%;
 	}
@@ -632,17 +631,17 @@ border:none;
 	{
 		position:absolute;
 		right:10px;
-		top: 25%;
+		top:50%;
 	}
 	#menu
 	{
-		top:70%;
+		top:50%;
 		height:45px;
 		width:45px;
 	}
 	#menu:hover
 	{
-		width:100%;
+		width:50%;
 	}
 	#liens
 	{
@@ -653,17 +652,17 @@ border:none;
 	}
 	body
 	{
-		margin-top:50%;
+		margin-top:30%;
 	}
 	#bienvenue p
 	{
-		font-size: 1em;
+		font-size: 0.6em;
 	}
 	#promos
 	{
 		width:95%;
 		background-size: cover;
-		font-size: 0.8em;
+		font-size: 0.5em;
 	}
 	#detail_index img
 	{
